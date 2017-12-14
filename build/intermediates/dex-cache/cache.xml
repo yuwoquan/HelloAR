@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_977ecd700cec77b289496628d37460d1a522b3a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_f2aca1ccdbe2fc040734992c0ddddb826f58abae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Open\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_7df575fe61782341aae2ba2623156c7f6560a95c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_4910ff353009f37456efbbf7afeff7e9feee4a11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_70e6f973310c05429e8407258b432f0c13bc410b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.1.1\5cd91fd014f5b72292f959748c20a2cefefae77d\eventbus-3.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5cd91fd014f5b72292f959748c20a2cefefae77d">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\eventbus-3.1.1_26069bbc26476bac87c28967951b8065e7a7c9f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\libs\EasyAR.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5f424470d40e0b27d11cf669151cef3811b26fa8">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\EasyAR_85a1f5d61ba4c43a188c99731204e713d263cdc4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.2.0\42bfaf64c94f3848ebf5cf1c2ea4ec9d1b3ac6c8\rxjava-1.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="42bfaf64c94f3848ebf5cf1c2ea4ec9d1b3ac6c8">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\rxjava-1.2.0_870337658ae259b4e95c589b707604c2e552ee88.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_78f7f5fb4adb9cda5ed66717044e4e8a8c76d6d5.jar" />
+    </item>
+
+</items>
