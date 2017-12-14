@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentre">
 
     <FrameLayout
         android:id="@+id/preview"
@@ -22,4 +23,5 @@
         android:layout_height="match_parent"
         android:text=" 佛山市威格特电气设备有限公司坐落于广东历史名城佛山，享受 “广佛经济圈”的资源和便利，处在中国最具经济实力和发展活动地区之一的珠江三角洲经济区中部，同时位于亚太经济发展活跃的东亚和东南亚的交汇处，地理位置极尽优势。佛山市威格特电气设备有限公司是一家专注于物联网技术产品研发及应用的高新技术企业。拥有一批专业产品研发及工程实施团队，致力于成为中国领先的物联网智能设备解决方案提供商。"/>
 </LinearLayout>
+
 </RelativeLayout>

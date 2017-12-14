@@ -49,6 +49,7 @@ public class HelloAR
     private boolean viewport_changed = false;
     private Vec2I view_size = new Vec2I(0, 0);
     private int rotation = 0;
+    private int i=3;
     private Vec4I viewport = new Vec4I(0, 0, 1280, 720);
 
     public HelloAR(MainActivity mainActivity)
@@ -132,6 +133,11 @@ public class HelloAR
         loadFromImage(tracker, "water_one.jpg");
         loadFromImage(tracker, "water_two.jpg");
         loadFromImage(tracker, "helmet.jpg");
+        loadFromImage(tracker, "helmeta.jpg");
+        loadFromImage(tracker, "helmetb.jpg");
+        loadFromImage(tracker, "helmetc.jpg");
+        loadFromImage(tracker, "helmetd.jpg");
+        loadFromImage(tracker, "helmete.jpg");
         loadFromImage(tracker, "helmetone.jpg");
         trackers.add(tracker);
         return status;
@@ -300,23 +306,36 @@ public class HelloAR
                         if (video == null && video_renderers.size() > 0) {
                            target_name = target.name();
                             if (target_name.equals("idback") && video_renderers.get(0).texId() != 0) {
-                                video = new ARVideo();
-//                                video.openTransparentVideoFile("video.mp4", video_renderers.get(0).texId());
-                                video.openVideoFile("video.mp4", video_renderers.get(0).texId());
-                                current_video_renderer = video_renderers.get(0);
-                                EventBus.getDefault().post(new MessageEvent("0"));
+                                        EventBus.getDefault().post(new MessageEvent("3"));
+
                             }
                             if (target_name.equals("helmet") && video_renderers.get(1).texId() != 0) {
-                                video = new ARVideo();
-                                video.openVideoFile("video.mp4", video_renderers.get(1).texId());
-                                current_video_renderer = video_renderers.get(1);
-                                EventBus.getDefault().post(new MessageEvent("0"));
+//                                video = new ARVideo();
+//                                video.openVideoFile("video.mp4", video_renderers.get(1).texId());
+//                                current_video_renderer = video_renderers.get(1);
+                                EventBus.getDefault().post(new MessageEvent("3"));
+                            }
+                            if (target_name.equals("helmeta") && video_renderers.get(1).texId() != 0) {
+                                EventBus.getDefault().post(new MessageEvent("3"));
+                            }
+                            if (target_name.equals("helmetb") && video_renderers.get(1).texId() != 0) {
+                                EventBus.getDefault().post(new MessageEvent("3"));
+                            }
+                            if (target_name.equals("helmetc") && video_renderers.get(1).texId() != 0) {
+                                EventBus.getDefault().post(new MessageEvent("3"));
+                            }
+                            if (target_name.equals("helmetd") && video_renderers.get(1).texId() != 0) {
+                                EventBus.getDefault().post(new MessageEvent("3"));
+                            }
+                            if (target_name.equals("helmete") && video_renderers.get(1).texId() != 0) {
+                                EventBus.getDefault().post(new MessageEvent("3"));
                             }
                             if (target_name.equals("helmetone") && video_renderers.get(2).texId() != 0) {
-                                video = new ARVideo();
-                                video.openVideoFile("video.mp4", video_renderers.get(2).texId());
-                                current_video_renderer = video_renderers.get(2);
-                                EventBus.getDefault().post(new MessageEvent("0"));
+//                                video = new ARVideo();
+//                                video.openVideoFile("video.mp4", video_renderers.get(2).texId());
+//                                current_video_renderer = video_renderers.get(2);
+                                EventBus.getDefault().post(new MessageEvent("3"));
+                                Log.e("123", "跳转页面" );
                             }
                         }
 
