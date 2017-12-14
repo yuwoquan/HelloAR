@@ -3,12 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_977ecd700cec77b289496628d37460d1a522b3a5.jar" />
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.2_4212e0f6f92d5b951512e9db49c4158b3a00fe3c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -18,6 +18,15 @@
         revision="23.0.1"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
         <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_f2aca1ccdbe2fc040734992c0ddddb826f58abae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_977ecd700cec77b289496628d37460d1a522b3a5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -63,6 +72,15 @@
         revision="23.0.1"
         sha1="5f424470d40e0b27d11cf669151cef3811b26fa8">
         <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\EasyAR_85a1f5d61ba4c43a188c99731204e713d263cdc4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Open\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_02a03a261f0471a7ed4938878296700366379742.jar" />
     </item>
     <item
         is-multidex="false"
