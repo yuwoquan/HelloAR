@@ -2,36 +2,19 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_margin="15dp"
     android:background="#17585757"
     android:id="@+id/linearlayout"
-    android:layout_width="270dp"
-    android:layout_height="200dp">
+    android:layout_width="470dp"
+    android:layout_gravity="center"
+    android:layout_height="30dp">
     <TextView
+
         android:textColor="#ffffff"
-        android:text="生产商：佛山市威格特电气设备有限公司"
-        android:layout_margin="5dp"
+        android:text="配电设施防涝分级预警装置
+
+        解决无网络信号的配电设施防涝预警问题！"
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <TextView
-        android:textColor="#ffffff"
-        android:layout_margin="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="地址：佛山市南海区桂城街道桂平中路65号鸿晖都市产业新城1幢902室"/>
-    <TextView
-        android:textColor="#ffffff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="网址：www.gdvictor.com"
-        />
-    <TextView
-        android:textColor="#ffffff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="联系电话：0757-81781715"
-        />
+
 </LinearLayout>

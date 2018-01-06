@@ -7,21 +7,38 @@
         android:id="@+id/preview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-<include layout="@layout/msg_one"
-    android:layout_margin="15dp"
-    android:layout_width="270dp"
-    android:layout_height="200dp"/>
+<!--<include layout="@layout/msg_one"-->
+    <!--android:layout_margin="15dp"-->
+    <!--android:layout_width="470dp"-->
+    <!--android:layout_height="wrap_content"/>-->
+
 <LinearLayout
     android:layout_alignParentRight="true"
+    android:id="@+id/linearlayout"
+    android:background="#17585757"
+    android:layout_marginTop="10dp"
     android:orientation="vertical"
-    android:id="@+id/two"
-    android:layout_width="250dp"
-    android:layout_height="300dp">
-    <TextView
-        android:textColor="#ff55cc"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text=" 佛山市威格特电气设备有限公司坐落于广东历史名城佛山，享受 “广佛经济圈”的资源和便利，处在中国最具经济实力和发展活动地区之一的珠江三角洲经济区中部，同时位于亚太经济发展活跃的东亚和东南亚的交汇处，地理位置极尽优势。佛山市威格特电气设备有限公司是一家专注于物联网技术产品研发及应用的高新技术企业。拥有一批专业产品研发及工程实施团队，致力于成为中国领先的物联网智能设备解决方案提供商。"/>
-</LinearLayout>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    <TextView
+        android:textSize="50dp"
+        android:id="@+id/text"
+        android:paddingTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="配电设施防涝分级预警装置"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:textSize="50dp"
+        android:id="@+id/text_two"
+        android:paddingTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="解决无网络信号的配电设施防涝预警问题！"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
 </RelativeLayout>

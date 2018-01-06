@@ -132,6 +132,14 @@ public class HelloAR
         loadFromImage(tracker, "victor.jpg");
         loadFromImage(tracker, "water_one.jpg");
         loadFromImage(tracker, "water_two.jpg");
+        loadFromImage(tracker, "water_three.jpg");
+        loadFromImage(tracker, "water_four.jpg");
+        loadFromImage(tracker, "water_five.jpg");
+        loadFromImage(tracker, "water_six.jpg");
+        loadFromImage(tracker, "water_seven.jpg");
+        loadFromImage(tracker, "water_eight.jpg");
+        loadFromImage(tracker, "water_nine.jpg");
+        loadFromImage(tracker, "water_ten.jpg");
         loadFromImage(tracker, "helmet.jpg");
         loadFromImage(tracker, "helmeta.jpg");
         loadFromImage(tracker, "helmetb.jpg");
@@ -139,6 +147,37 @@ public class HelloAR
         loadFromImage(tracker, "helmetd.jpg");
         loadFromImage(tracker, "helmete.jpg");
         loadFromImage(tracker, "helmetone.jpg");
+        loadFromImage(tracker, "helmetf.jpg");
+        loadFromImage(tracker, "helmeti.jpg");
+        loadFromImage(tracker, "helmetj.jpg");
+        loadFromImage(tracker, "helmetk.jpg");
+        loadFromImage(tracker, "h_one.jpg");
+        loadFromImage(tracker, "h_two.jpg");
+        loadFromImage(tracker, "h_three.jpg");
+        loadFromImage(tracker, "h_four.jpg");
+        loadFromImage(tracker, "h_five.jpg");
+        loadFromImage(tracker, "h_six.jpg");
+        loadFromImage(tracker, "h_seven.jpg");
+        loadFromImage(tracker, "h_eight.jpg");
+        loadFromImage(tracker, "h_nine.jpg");
+        loadFromImage(tracker, "t_one.jpg");
+        loadFromImage(tracker, "t_two.jpg");
+        loadFromImage(tracker, "t_three.jpg");
+        loadFromImage(tracker, "t_four.jpg");
+        loadFromImage(tracker, "t_five.jpg");
+        loadFromImage(tracker, "w_one.jpg");
+        loadFromImage(tracker, "w_two.jpg");
+        loadFromImage(tracker, "w_three.jpg");
+        loadFromImage(tracker, "b_one.jpg");
+        loadFromImage(tracker, "b_two.jpg");
+        loadFromImage(tracker, "b_three.jpg");
+        loadFromImage(tracker, "b_four.jpg");
+        loadFromImage(tracker, "y_one.jpg");
+        loadFromImage(tracker, "y_two.jpg");
+        loadFromImage(tracker, "y_three.jpg");
+        loadFromImage(tracker, "y_four.jpg");
+        loadFromImage(tracker, "victio.jpg");
+        loadFromImage(tracker, "yida.jpg");
         trackers.add(tracker);
         return status;
     }
@@ -207,7 +246,7 @@ public class HelloAR
         }
         videobg_renderer = new Renderer();
         video_renderers = new ArrayList<VideoRenderer>();
-        for (int k = 0; k < 5; k += 1) {
+        for (int k = 0; k < 11; k += 1) {
             VideoRenderer video_renderer = new VideoRenderer();
             video_renderer.init();
             video_renderers.add(video_renderer);
@@ -305,37 +344,42 @@ public class HelloAR
                     if (tracked_target == 0) {
                         if (video == null && video_renderers.size() > 0) {
                            target_name = target.name();
-                            if (target_name.equals("idback") && video_renderers.get(0).texId() != 0) {
+                            if (target_name.equals("idback") && video_renderers.get(10).texId() != 0) {
                                         EventBus.getDefault().post(new MessageEvent("3"));
-
                             }
                             if (target_name.equals("helmet") && video_renderers.get(1).texId() != 0) {
-//                                video = new ARVideo();
-//                                video.openVideoFile("video.mp4", video_renderers.get(1).texId());
-//                                current_video_renderer = video_renderers.get(1);
                                 EventBus.getDefault().post(new MessageEvent("3"));
                             }
-                            if (target_name.equals("helmeta") && video_renderers.get(1).texId() != 0) {
+                            if (target_name.equals("helmeta") && video_renderers.get(2).texId() != 0) {
                                 EventBus.getDefault().post(new MessageEvent("3"));
                             }
-                            if (target_name.equals("helmetb") && video_renderers.get(1).texId() != 0) {
+                            if (target_name.equals("helmetb") && video_renderers.get(3).texId() != 0) {
                                 EventBus.getDefault().post(new MessageEvent("3"));
                             }
-                            if (target_name.equals("helmetc") && video_renderers.get(1).texId() != 0) {
+                            if (target_name.equals("helmetc") && video_renderers.get(4).texId() != 0) {
                                 EventBus.getDefault().post(new MessageEvent("3"));
                             }
-                            if (target_name.equals("helmetd") && video_renderers.get(1).texId() != 0) {
+                            if (target_name.equals("helmetd") && video_renderers.get(5).texId() != 0) {
                                 EventBus.getDefault().post(new MessageEvent("3"));
                             }
-                            if (target_name.equals("helmete") && video_renderers.get(1).texId() != 0) {
+                            if (target_name.equals("helmete") && video_renderers.get(6).texId() != 0) {
                                 EventBus.getDefault().post(new MessageEvent("3"));
                             }
-                            if (target_name.equals("helmetone") && video_renderers.get(2).texId() != 0) {
+                            if (target_name.equals("helmetf") && video_renderers.get(7).texId() != 0) {
+                                    EventBus.getDefault().post(new MessageEvent("3"));
+                                }
+                            if (target_name.equals("helmeti") && video_renderers.get(8).texId() != 0) {
+                                    EventBus.getDefault().post(new MessageEvent("3"));
+                                }
+                            if (target_name.equals("helmetj") && video_renderers.get(9).texId() != 0) {
+                                    EventBus.getDefault().post(new MessageEvent("3"));
+                                }
+                            }
+                            if (target_name.equals("helmetone") && video_renderers.get(0).texId() != 0) {
 //                                video = new ARVideo();
 //                                video.openVideoFile("video.mp4", video_renderers.get(2).texId());
 //                                current_video_renderer = video_renderers.get(2);
                                 EventBus.getDefault().post(new MessageEvent("3"));
-                                Log.e("123", "跳转页面" );
                             }
                         }
 
@@ -354,15 +398,120 @@ public class HelloAR
 //                            EventBus.getDefault().post(new MessageEvent("1"));
 //                        }
                         if (target_name.equals("victor")){
-                            EventBus.getDefault().post(new MessageEvent("2"));
+                            EventBus.getDefault().post(new MessageEvent("1"));
                         }
-                        if (target_name.equals("water_two")){
-                            EventBus.getDefault().post(new MessageEvent("2"));
-                        }
-                        if (target_name.equals("victor")){
-                            EventBus.getDefault().post(new MessageEvent("2"));
-                        }
+                    if (target_name.equals("victio")){
+                        EventBus.getDefault().post(new MessageEvent("1"));
                     }
+                        if (target_name.equals("water_two")){
+                            EventBus.getDefault().post(new MessageEvent("1"));
+                        }
+                        if (target_name.equals("water_one")){
+                            EventBus.getDefault().post(new MessageEvent("1"));
+                        }
+                        if (target_name.equals("water_three")){
+                            EventBus.getDefault().post(new MessageEvent("1"));
+                        }
+                    if (target_name.equals("w_two")){
+                        EventBus.getDefault().post(new MessageEvent("1"));
+                    }
+                    if (target_name.equals("w_one")){
+                        EventBus.getDefault().post(new MessageEvent("1"));
+                    }
+                    if (target_name.equals("w_three")){
+                        EventBus.getDefault().post(new MessageEvent("1"));
+                    }
+                        if (target_name.equals("water_four")){
+                            EventBus.getDefault().post(new MessageEvent("1"));
+                        }
+                    if (target_name.equals("yida")){
+                        EventBus.getDefault().post(new MessageEvent("1"));
+                    }
+                        if (target_name.equals("water_five")){
+                            EventBus.getDefault().post(new MessageEvent("1"));
+                        }
+                        if (target_name.equals("water_six")){
+                            EventBus.getDefault().post(new MessageEvent("1"));
+                        }
+                        if (target_name.equals("water_seven")){
+                            EventBus.getDefault().post(new MessageEvent("1"));
+                        }
+                        if (target_name.equals("water_eight")){
+                            EventBus.getDefault().post(new MessageEvent("1"));
+                        }
+                        if (target_name.equals("water_nine")){
+                            EventBus.getDefault().post(new MessageEvent("1"));
+                        }
+                        if (target_name.equals("water_ten")){
+                            EventBus.getDefault().post(new MessageEvent("1"));
+                        }
+                    if (target_name.equals("y_one")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("y_two")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("y_three")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("y_four")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("h_one")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("h_two")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("h_three")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("h_four")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("h_five")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("h_six")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("h_seven")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("h_eight")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("h_nine")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("t_one")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("t_two")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("t_three")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("t_four")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("t_five")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("b_one")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("b_two")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("b_three")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                    if (target_name.equals("b_four")){
+                        EventBus.getDefault().post(new MessageEvent("3"));
+                    }
+                }
                     ImageTarget imagetarget = target instanceof ImageTarget ? (ImageTarget)(target) : null;
                     if (imagetarget != null) {
                         if (current_video_renderer != null) {
@@ -371,7 +520,6 @@ public class HelloAR
                                 current_video_renderer.render(camera.projectionGL(0.2f, 500.f), targetInstance.poseGL(), imagetarget.size());
                             }
                         }
-                    }
                 }
             } else {
                 if (tracked_target != 0) {

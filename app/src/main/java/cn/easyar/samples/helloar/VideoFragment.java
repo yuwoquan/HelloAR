@@ -8,7 +8,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 import android.widget.VideoView;
 
 /**
@@ -31,7 +30,6 @@ public class VideoFragment extends Fragment {
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                Toast.makeText(getContext(), "666666656", Toast.LENGTH_SHORT).show();
                 getActivity().onBackPressed();
 
             }

@@ -52,8 +52,9 @@ public class MainActivity extends AppCompatActivity {
     private GLView glView;
     private TextView textView;
     private static final String TAG = "MainActivity";
-    private LinearLayout linearLayout, two;
+    private LinearLayout linearLayout;
     private VideoView videoView;
+    private  FragmentManager fragmentManage;
 //    private Fragment mFragment;//当前显示的Fragment
 //    private Fragment videoFragment;
 
@@ -64,9 +65,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         textView = (TextView) findViewById(R.id.text);
         linearLayout = (LinearLayout) findViewById(R.id.linearlayout);
-        two = (LinearLayout) findViewById(R.id.two);
         videoFragment=new VideoFragment();
-        two.setVisibility(View.GONE);
 //        videoView.setVisibility(View.GONE);
         linearLayout.setVisibility(View.GONE);
 //        linearLayout.setBackground(getResources().getColor("#17585757"));
@@ -179,61 +178,31 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-//    private void switchFragment(Fragment fragment) {
-//        //判断当前显示的Fragment是不是切换的Fragment
-//        if (mFragment != fragment) {
-//            //判断切换的Fragment是否已经添加过
-//            if (!fragment.isAdded()) {
-//                //如果没有，则先把当前的Fragment隐藏，把切换的Fragment添加上
-//                getSupportFragmentManager().beginTransaction().hide(mFragment)
-//                        .add(R.id.fragmentre, fragment).commit();
-//            } else {
-//                //如果已经添加过，则先把当前的Fragment隐藏，把切换的Fragment显示出来
-//                getSupportFragmentManager().beginTransaction().hide(mFragment).show(fragment).commit();
-//            }
-//            mFragment = fragment;
-//        }
-//    }
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMoonEvent(MessageEvent messageEvent) {
-//        textView.setText(messageEvent.getMessage());
         String msg = messageEvent.getMessage().toString();
         Log.e(TAG, msg);
-//        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         if (msg.contains("0")) {
             linearLayout.setVisibility(View.GONE);
-            two.setVisibility(View.GONE);
         }
         if (msg.contains("1")) {
             linearLayout.setVisibility(View.VISIBLE);
-            two.setVisibility(View.GONE);
         }
-        if (msg.contains("2")) {
-            linearLayout.setVisibility(View.GONE);
-            two.setVisibility(View.VISIBLE);
-        }
+
         if (msg.contains("3")) {
             linearLayout.setVisibility(View.GONE);
-            two.setVisibility(View.GONE);
+//            if (videoFragment!=null){
+
             if(!videoFragment.isAdded()) {
-                FragmentManager fragmentManage = getSupportFragmentManager();
+               fragmentManage = getSupportFragmentManager();
                 fragmentManage.beginTransaction()
                         .add(R.id.fragmentre, videoFragment)
                         .addToBackStack(null)
                         .commit();
+//                }else {
+//                fragmentManage.beginTransaction().remove(videoFragment).commit();
+//            }
             }
-//            String uri = "android.resource://" + getPackageName() + "/" + R.raw.video;
-//            videoView.setVisibility(View.VISIBLE);
-//            videoView.setVideoPath(uri);
-//            videoView.setVideoURI(Uri.parse(uri));
-//            videoView.start();
-//            videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-//                @Override
-//                public void onCompletion(MediaPlayer mediaPlayer) {
-//                    videoView.setVisibility(View.GONE);
-//                    finish();
-//                }
-//            });
         }
     }
 }

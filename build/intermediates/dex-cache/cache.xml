@@ -12,21 +12,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_f2aca1ccdbe2fc040734992c0ddddb826f58abae.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
         <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_977ecd700cec77b289496628d37460d1a522b3a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="E:\download\EasyAR_SDK_2.0.0_Basic_Samples_Android_2017-05-29\HelloAR\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_f2aca1ccdbe2fc040734992c0ddddb826f58abae.jar" />
     </item>
     <item
         is-multidex="false"
